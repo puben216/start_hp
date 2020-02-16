@@ -1,10 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>IT cafe</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		
+		div.img-hidden {
+			height: 300px;
+			overflow: hidden;
+		}
+
+		.container-m {
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+
+		.footer {
+			background-color: black;
+			text-align: center;
+			color: #fff;
+		}
+	</style>
 </head>
 <body>
-	hello
+	
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand logo" href="#">IT cafe</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							blog
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">ニュース</a>
+								<a class="dropdown-item" href="#">技術</a>
+								<a class="dropdown-item" href="#">活動報告</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">event</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">FAQ</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container-fulied img-hidden">
+	  <img src="./images/gazo5.jpg" class="img-fulied">
+	</div>
+
+	<div class="container container-m">
+		<h2 class="new-blogs">新着記事</h2>
+		<div class="card-deck">
+		  <div class="card">
+		    <img class="card-img-top" src="./images/gazo1.jpg">
+		    <div class="card-body">
+		      <h5 class="card-title">第4回<br>セキュリティ</h5>
+		      <p class="card-text">活動内容活動内容活動内容活動内容活動内容</p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="./images/gazo5.jpg">
+		    <div class="card-body">
+		      <h5 class="card-title">第3回<br>Webサイト公開</h5>
+		      <p class="card-text">活動内容活動内容活動内容活動内容活動内容</p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="./images/gazo3.jpg">
+		    <div class="card-body">
+	      <h5 class="card-title">第2回<br>デザイン（HTML,CSS,JSなど）	</h5>
+		      <p class="card-text">活動内容活動内容活動内容活動内容活動内容</p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="container container-m">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>第～回<br>～勉強会</h1>
+        <p>
+        	～年～月～日<br>
+        	～時から<br>
+        	場所：～<br>
+        	内容：<br>
+        	～～～～～～～
+        </p>
+      </div>
+      <div class="col-md-6">
+      	<img src="./images/gazo4.jpg" class="img-fluid">
+      </div>
+    </div>
+</div>
+	
+	<footer class="footer">© 2020 IT cafe study</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
