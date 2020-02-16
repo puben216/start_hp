@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>第2回　デザイン</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/blogs.css">
+</head>
+<body>
+	
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand logo" href="#">IT cafe</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">about</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							blog
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">ニュース</a>
+								<a class="dropdown-item" href="#">技術</a>
+								<a class="dropdown-item" href="#">活動報告</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">event</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">FAQ</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container container-m">
+		<h2>第2回　デザインについて</h2>
+		
+		<h3>テーマ</h3>
+		<div class="desc">Bootstrapを使用して時間を少ない時間でそこそこのホームページを作成する</div>
+
+		<h3>やったこと</h3>
+		<div class="desc">Bootstrapを使用してホームページを作成し、git pagesで公開</div>
+
+		
+		<h3>前提</h3>
+		<div class="desc">
+			<ul>
+				<li>
+					あまり時間をかけない
+				</li>
+				<li>
+					HTML、CSSの初歩的なことは知っている
+				</li>
+			</ul>
+		</div>
+
+		<h3>Bootstrapとは？</h3>
+		<div class="desc">
+			世界で最も人気のあるCSSフレームワーク<br>
+			レスポンシブデザインにも対応しており、手軽におしゃれなデザインを実装可能<br><br>
+			詳しくはこちらをご覧ください<br>
+			<a href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+		</div>
+
+
+		<h3>なぜBootstrapを使ったのか？</h3>
+		<div class="desc">
+			<ul>
+				<li>簡単にレスポンシブデザイン</li>
+				<li>手軽にそこそこのデザインを作成</li>
+				<li>githubのスター数も多く、情報が豊富</li>
+			</ul>
+		</div>
+
+
+		<h3>git pagesとは？</h3>
+		<div class="desc">
+			HTML、CSS、JavaScriptファイルで作成された静的サイトなウェブサイトを公開できるサイトホスティングサービス<br><br>
+			詳しくはこちらをご覧ください<br>
+			<a href="https://help.github.com/ja/github/working-with-github-pages/about-github-pages">
+				https://help.github.com/ja/github/working-with-github-pages/about-github-pages
+			</a>
+		</div>
+
+
+		<h3>何をした？</h3>
+		<div class="desc">
+			<ol class="done-list">
+				<li>githubでリポジトリ作成</li>
+				<li>
+					以下のディレクトリ、ファイルを作成し、1で作成したリポジトリへpush
+					<div class="sample-code" id="sample-code">
+							# ディレクトリ　start_hp <br>
+
+							# ファイル　start_hp/index.html <br>
+							<code>
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html lang="en"&gt;<br>
+									&lt;head&gt;<br>
+										&lt;meta charset="UTF-8"&gt;<br>
+										&lt;title&gt;Document&lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br>
+										hello<br>
+									&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</code>
+					</div>
+				</li>
+				<li><br>
+					作成したリポジトリのgithub画面で<br>
+					Settings → GitHub Pages → Source <br>	
+					プルダウンのmaster branch を選択し、Save ボタンをクリック<br><br>
+					以下の形式でURLが作成される<br>
+					https://リポジトリ名.github.io/ディレクトリ名/.
+				</li>
+				<li>
+					作成されたURLへアクセス<br>
+					→　アクセス成功し、helloの文字が表示されている（公開されている）
+				</li>
+				<li>
+					以下のサイトを参考にhtml、CSSを使用し、index.htmlを修正後、push <br>		
+					<a href="https://getbootstrap.com/">https://getbootstrap.com/</a><br>
+					<a href="https://skillhub.jp/courses/168">https://skillhub.jp/courses/168（とてもわかりやすかったです）</a>
+				</li>
+				<li>
+					完成！<br>
+					<a href="https://puben216.github.io/start_hp/.">https://puben216.github.io/start_hp/.</a>	
+				</li>
+			</ol>
+
+		</div>
+
+
+		<h3>Bootstrap以外だと、どんなCSSフレームワークがある？</h3>
+		<div class="desc">
+			以下のサイトがとても参考になりました。
+			<a href="https://www.seleqt.net/programming/10-smallest-and-fastest-frontend-web-dev-frameworks/">
+				https://www.seleqt.net/programming/10-smallest-and-fastest-frontend-web-dev-frameworks/
+			</a>
+		</div>
+
+
+
+
+		<h3>Bootstrapを使ってみての感想</h3>
+		<div class="desc">
+			<ul>
+				<li>デザインの定義方法をある程度統一できる</li>
+				<li>
+					あまりデザインに詳しくなくても、ある程度のデザインを作成できた
+					→Bootstrap読み込んで数行コードを書くだけで、それなりのデザインができた
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="footer">c 2020 IT cafe study</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
