@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>第1回　Git</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		div.img-hidden {
+			height: 300px;
+			overflow: hidden;
+		}
+
+		.container-m {
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+
+		.footer {
+			background-color: black;
+			text-align: center;
+			color: #fff;
+		}
+
+		h3 {
+			margin-top: 50px;
+		}
+
+		.desc {
+			font-size: 1.2rem;
+		}
+	</style>
+</head>
+<body>
+	
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand logo" href="#">IT cafe</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">about</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							blog
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">ニュース</a>
+								<a class="dropdown-item" href="#">技術</a>
+								<a class="dropdown-item" href="#">活動報告</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">event</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">FAQ</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container container-m">
+		<h2>第1回　Git</h2>
+		
+		<h3>テーマ</h3>
+		<div class="desc">チーム開発のバージョン管理をGitで行うときの運営方法について</div>
+
+		<h3>やりたいこと</h3>
+		<div class="desc">チームで開発を行っているソースコードの変更履歴などを、Gitを使って管理する</div>
+
+		
+		<h3>前提</h3>
+		<div class="desc">
+			<ul>
+				<li>
+					5名以下の小規模チーム
+				</li>
+				<li>
+					Githubは使わない
+				</li>
+				<li>
+					現在の履歴管理はファイル末尾に修正した日付を付けて（ファイル名YYYYMMDD等）管理している
+				</li>
+			</ul>
+		</div>
+
+		<h3>なぜ変えたいのか？</h3>
+		<div class="desc">
+			<ul>
+				<li>ファイル数が多くなりすぎる（検索するのも大変）</li>
+				<li>間違って上書きや削除してしまった時に元に戻せない</li>
+				<li>
+					誰が何のために編集したのかなどわからなくなる（引き継いだ人が困る）<br>→ソースにコメントすると可読性が下がる
+				</li>
+				<li>デプロイ等、手動でコピーするミスを減らすため</li>
+				<li>簡単にブランチが切れる<br>→日付だとディレクトリ丸ごとコピーして、バックアップしてとなってしまう</li>
+				<li>コミットの粒度で元に戻れる<br>→日付管理で同じ粒度だとファイル数が膨大になる</li>
+			</ul>
+		</div>
+
+
+		<h3>バージョン管理をGitにした理由は？</h3>
+		<div class="desc">
+			<ul>
+				<li>簡単に本番とステージング環境を入れ替えて使えるようにしたかった</li>
+				<li>他のバージョン管理に比べて、Gitの方がスタンダード</li>
+				<li>分散管理や、ブランチが簡単にきれることも魅力だった</li>
+			</ul>
+		</div>
+
+
+		<h3>気を付けたこと</h3>
+		<div class="desc">Git（バージョン管理）を使うことで、煩雑になったりミスが増えたりしないよう、チームでの運用方法をきちんと確立する</div>
+
+
+		<h3>参考にした運用方法</h3>
+		<div class="desc">Gitflow</div>
+
+
+		<h3>適用した管理、運用方法</h3>
+
+
+
+
+		<h3>後日更新予定↓</h3>
+		<div class="desc">
+			<ul>
+				<li>運用詳細</li>
+				<li>問題点、課題</li>
+				<li>よかったこと、改善したこと</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="footer">c 2020 IT cafe study</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
